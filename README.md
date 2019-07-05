@@ -14,6 +14,6 @@ exten =>1234,1,answer
 same=>n,agi(speechrecog.php)
 same=>n,Hangup()
 ```
-Copy the `speechrecog.php` of this repository to `/var/lib/asterisk/agi-bin/transcribeWithGoogle.eagi`.
+Copy the `speechrecog.php` and `phpagi.php` of this repository to `/var/lib/asterisk/agi-bin/` directory.
 
 Call extension 1234 and inspect your Asterisk CLI to get the transcription, the `PHP` script print the result.
